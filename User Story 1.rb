@@ -151,9 +151,8 @@ end
 
 feature '商業需求學生頁面' do
   scenario '使用者按[瀏覽教師]將會跳轉到教師牆' do
-  scenario '使用者按[現在開始]將會跳轉到教師牆' do
-
   end
+  scenario '使用者按[現在開始]將會跳轉到教師牆' do
   end
 end
 
