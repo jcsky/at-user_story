@@ -159,19 +159,18 @@ end
 
 feature '教師牆頁面' do
   scenario '使用者可以選擇自己想學的語言‘ do
+  end
   scenario '使用者按[幫我推薦老師]後將會跳出一系列篩選視窗' do
+  end
   scenario '使用者可在[聊天視窗]點選教師並傳送訊息' do
+  end
   scenario '使用者可同時與多位教師傳送訊息' do
+  end
   scenario '使用者可按頁面右上方[訊息]查看關掉的[訊息視窗]' do
+  end
   scenario '使用者於[訊息]按[查看全部]即會出現蓋版歷史訊息畫面' do
+  end
   scenario '使用者進入任一歷史訊息便可以點教師名字進入[教師販售頁]' do
-
-  end
-  end
-  end
-  end
-  end
-  end
   end
 end
 
