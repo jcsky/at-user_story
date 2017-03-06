@@ -32,10 +32,7 @@ feature '<申請成為教師>頁面' do
     end
     scenario '使用者按[下一步]會跳轉到<申請成為教師_教學語言>頁面' do
     end
-
   end
-end
-
   feature '<教學語言>頁面' do
     scenario '未登入教師選取教授語言' do
     end
@@ -43,10 +40,7 @@ end
     end
     scenario '使用者按[下一步]會跳轉到<教學標籤>頁面' do
     end
-
   end
-
-
   feature '<教學標籤>頁面' do
     scenario '使用者可任意輸入自製標籤' do
     end
@@ -56,9 +50,7 @@ end
     end
     scenario '使用者按[下一步]會跳轉到<教師介紹>頁面' do
     end
-
   end
-
   feature '<教師介紹>頁面' do
     scenario '使用者可輸入250字以下之簡短介紹' do
     end
@@ -71,7 +63,6 @@ end
   end
 
   feature '<教學證照>頁面' do
-
     scenario '使用者可新增教學證照' do
     end
     scenario '使用者可刪除教學證照' do
@@ -124,6 +115,7 @@ end
   時間是否為必填
   有沒有預設值
   上課預約不理他
+  設定課表前
 
 
   feature '授課價位頁面' do
@@ -154,11 +146,12 @@ end
     scenario '未審核通過之使用者再度進入<申請成為教師>頁面會到<提交申請>的頁面' do
     end
   end
+end
 
 feature '<教師牆>頁面' do
   scenario '使用者可以選擇自己想學的語言‘ do
   end
-  scenario '使用者按[幫我推薦老師]後將會跳出一系列篩選視窗' do
+  scenario 'pending 使用者按[幫我推薦老師]後將會跳出一系列篩選視窗' do 需求
   end
   scenario '使用者可在聊天視窗點選教師並傳送訊息' do
   end
@@ -172,6 +165,8 @@ feature '<教師牆>頁面' do
   end
 end
 
+獨立訊息
+
 
 
 
@@ -179,45 +174,34 @@ end
 
 
 feature '<教師販售頁>' do
-  scenario '使用者可以預約體驗課' do
-  end
-    feature '已登入使用者預約體驗課會跳出教師開課之時間表' do
-    feature '未登入使用者預約體驗課會跳出註冊視窗' do
-  scenario '使用者可以預約正式課' do
-      end
+  feature '使用者可以預約體驗課' do
+    scenario '已登入使用者預約體驗課會跳出教師開課之時間表' do
+    end
+    scenario '未登入使用者預約體驗課會跳出註冊視窗' do
     end
   end
-    feature '已登入且已買課之使用者預約正式課會跳出教師開課之時間表' do
-    feature '已登入但未買課之使用者預約正式課會到<付款頁面>'do
-    feature '未登入使用者預約正式課會跳出註冊視窗' do
-      end
+  feature '使用者可以預約正式課' do
+    scenario '已登入且擁有正式課課堂數之使用者預約正式課會跳出教師開課之時間表' do
+    end
+    scenario '已登入但沒有正式課課堂數之使用者預約正式課會到<付款頁面>'do
+    end
+    scenario '未登入使用者預約正式課會跳出註冊視窗' do
     end
   end
-end
-
   feature '授課時間' do
     scenario '使用者可看到教師開課之時間表' do
     end
     scenario '使用者可在時間表預約課程' do
-      given 'user has private course' do
-        when 'click' do
-        end
-        then 'sucess' do
-        end
-      end
     end
   end
-
   scenario '已登入且已買課之使用者按[可預約]即預約課程' do
   end
   scenario '已登入但未買課之使用者按[可預約]會到<付款頁面>' do
   end
   scenario '未登入之使用者按[可預約]會跳出註冊視窗' do
   end
-
   scenario '使用過體驗課後[可預約]會變成已預約體驗' do
   end
-
   scenario '未登入用者點[聯繫教師]將會跳出註冊視窗' do
   end
   scenario '已登入使用者第一次點某位<教師販售頁>之[聯繫教師]會跳出一系列篩選視窗,包含想學什麼語言
@@ -225,6 +209,7 @@ end
   end
   scenario '已登入使用者點某位<教師販售頁>之[聯繫教師]訊息視窗會在頁面右下角跳出' do
   end
+end
 
 
 
@@ -237,7 +222,6 @@ feature '<Order頁>' do
   end
   scenario '使用者按[確認並支付]後會到 Dashboard <預約課程>頁面' do
   end
-
 end
 
 
