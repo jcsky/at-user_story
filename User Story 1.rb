@@ -129,6 +129,8 @@ end
   feature '授課價位頁面' do
     scenario '使用者按[新增課程包]便可新增5的倍數之課堂欄位' do
     end
+    scenario '體驗課、1,5,10堂課價格為必填' do
+    end
     scenario '使用者按[儲存並退出]會儲存目前的資訊並跳轉到教師牆' do
     end
     scenario '使用者按[下一步]會跳轉到<收帳設定>頁面' do
@@ -152,47 +154,6 @@ end
     scenario '未審核通過之使用者再度進入<申請成為教師>頁面會到<提交申請>的頁面' do
     end
   end
-
-
- 
-
-
-feature '<教師招募>頁面' do
-  scenario '使用者按[影片介紹]即會出現宣傳影片' do
-  end
-  scenario '使用者按[立即申請]即會跳轉到<申請成為教師>頁面' do
-  end
-end
-
-
-
-
-
-feature '<商業需求學生>頁面' do
-  scenario '使用者按[瀏覽教師]將會跳轉到<教師牆>' do
-  end
-  scenario '使用者按[現在開始]將會跳轉到<教師牆>' do
-  end
-end
-
-feature '<考試需求學生>頁面' do
-  scenario '使用者按[瀏覽教師]將會跳轉到<教師牆>' do
-  end
-  scenario '使用者按[現在開始]將會跳轉到<教師牆>' do
-  end
-end
-
-feature '<旅遊需求學生>頁面' do
-  scenario '使用者按[瀏覽教師]將會跳轉到<教師牆>' do
-  end
-  scenario '使用者按[現在開始]將會跳轉到<教師牆>' do
-  end
-end
-
-
-
-
-
 
 feature '<教師牆>頁面' do
   scenario '使用者可以選擇自己想學的語言‘ do
