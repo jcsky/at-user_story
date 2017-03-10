@@ -1,7 +1,9 @@
 feature '<教師 Dashboard>頁面' do
-  scenario '教學記錄欄位顯示累積上課時數及累積上課收入' do
-  end
-  scenario '課程狀態欄位顯示即將上課堂數/已完成上課堂數/學生已購課堂數' do
+  feature 'sidebar' do
+    scenario 'show 教學記錄(累積上課時數及累積上課收入)'do
+    end
+    scenario '課程狀態欄位顯示即將上課堂數/已完成上課堂數/學生已購課堂數' do
+    end
   end
 
   feature '<教師 Dashboard_我的課表>頁面' do
