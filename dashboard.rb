@@ -86,7 +86,11 @@ feature '<教師 Dashboard>頁面' do
     feature '<教師 Dashboard_教師設定_收帳設定>' do
       scenario '可改變收帳方式' do
       end
-      scenario '可更新PayPal及銀行的資料' do
+      feature '可更新PayPal及銀行的資料' do
+        scenario 'paypal需要: papal account email' do
+        end
+        scenario '銀行需要: 1. 2. 3. ...' do
+        end
       end
     end
   end
