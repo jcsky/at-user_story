@@ -100,7 +100,7 @@ feature '<教師 Dashboard>' do
       end
       scenario '可新增或刪除學歷背景(日期/學校及科系名稱/檔案)' do
       end
-      scenario '可新增或刪除工作經驗(日期/公司名稱/工作名稱)' do
+      scenario '可新增或刪除工作經驗(日期/公司名稱/工作內容)' do
       end
     end
     feature '介紹影片' do
