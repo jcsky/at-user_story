@@ -132,20 +132,25 @@ feature '<學生 Dashboard>頁面'
   end
 
   feature '<我的課表>' do
-    scenario '行事曆上以灰字表示過去已完成課程' do
-    end
-    scenario '行事曆上以紅字表示當天課程但未確認狀態' do
-    end
-    scenario '行事曆上以綠字表示以預約但未上的課程'
+    scenario '以顏色區分不同狀態(過去已完成、當天或未確認課、已預約但未完成的課程)' do
     end
     feature '課程開始前'
       scenario '點選行事曆上已預約但未上課之課程將會顯示課程詳情' do
       end
-      scenario '可於課程詳情處點選[即將上課]或開課12小時前[取消預約]' do
+      scenario '於課程詳情處點選[即將上課]' do
       end
       scenario '開課10分鐘前[即將上課]會變成[進入教室]而[取消預約]會消失' do
       end
+      feature '取消預約'
+        scenario '學生須於開課12小時前取消課堂預約' do
+        end
+        scenario '已預約課的user可於開課12小時前[取消預約]但一個月上限兩次' do
+        end
+        scenario '第三次無法再取消，系統仍會開課' do
+        end
+      end
     end
+
     feature '課程結束後' do
       scenario '課程結束後需在課程詳情按[確認課堂完成]並給予老師評價' do
       end
@@ -155,27 +160,19 @@ feature '<學生 Dashboard>頁面'
       end
     end
   end
+
   feature '<預約課程>' do
     scenario '已購課的user可在此頁面預約課程' do
     end
-    scenario '行事曆上以灰字表示教師沒開課之時間' do
-    end
-    scenario '行事曆上以綠字表示教師有開課之時間' do
-    end
-    scenario '行事曆上以紅字表示當天' do
+    scenario '行事曆上以顏色區分是否開課' do
     end
   end
+
   feature '<我的教師>' do
     feature '可查看已上過/已預約的正式課(或體驗課)教師及已收藏教師' do
       scenario '點選[尋找教師]跳轉到<教師牆>便可收藏教師' do
       end
       scenario '點選教師即可查看課程數(已完成/已預約/未預約)' do
-      end
-    end
-    #feature '[取消預約]'
-      scenario '已預約課的user可於開課12小時前[取消預約]但一個月上限兩次' do
-      end
-      scenario '第三次無法再取消，系統仍會開課' do
       end
     end
     feature '[申請換課]' do
