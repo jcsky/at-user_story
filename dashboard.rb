@@ -62,7 +62,7 @@ feature '<教師 Dashboard>' do
       end
     end
     feature '選擇是否需要確認上課預約' do
-      scenario '需要:若教師沒有在24小時內做選擇，此課將自動被取消' do
+      scenario '需要:若教師沒有在24小時內做選擇，此課將自動取消' do
       end
       scenario '不需要(系統預設):學生預約即成功' do
       end
