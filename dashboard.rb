@@ -42,7 +42,6 @@ feature '<教師 Dashboard>' do
     end
   end
 
-
   feature '<收入明細>' do
     scenario '可選上不同年月份查看已上課紀錄及學生購課紀錄' do
     end
