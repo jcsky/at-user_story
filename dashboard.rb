@@ -37,7 +37,7 @@ feature '<教師 Dashboard>' do
     feature '課程結束後' do
       scenario '需按[確認課堂完成]且給予學生評價來完成課程' do
       end
-      scenario '可按[回報課程問題]來知會AT’ do
+      scenario '可按[回報課程問題]來告知AT’ do
       end
     end
   end
