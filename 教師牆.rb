@@ -1,5 +1,5 @@
-feature '<教師牆>頁面' do
-  scenario '使用者可以選擇自己想學的語言‘ do
+feature '<教師牆>' do
+  scenario '使用者可以選擇自己想學的語言' do
   end
   feature 'login user訊息功能'
     scenario '可在聊天視窗點選教師並傳送訊息' do
