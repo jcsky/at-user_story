@@ -41,7 +41,7 @@ feature '<教師販售頁>' do
     end
     scenario 'user可留言發問' do
     end
-    scenario '課程介紹及留言可由系統翻譯成該用戶使用之語言' do
+    scenario '課程介紹及留言可由系統翻譯為該用戶使用之語言' do
     end
   end
 
