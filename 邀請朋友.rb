@@ -1,11 +1,15 @@
 feature '<邀請朋友>頁面' do
-  scenario '點選臉書圖示將會跳出臉書分享頁面' do
+  feature '邀請朋友' do
+    scenario '可直接輸入朋友電子信箱發送電子郵件' do
+    end
+    scenario '可複製連結' do
+    end
+    scenario '可使用臉書或者Gmail邀請好友' do
+    end
   end
-  scenario '可觀看條款及細則' do
+  scenario '點選[條款及細則]將會顯示推薦計畫條款視窗' do
   end
-  scenario '點選條款及細則將會跳出資訊視窗' do
-  end
-  scenario '點選了解如何在AT上邀請好友將會跳出資訊視窗' do
+  scenario '點選[了解如何在AT上邀請好友]將會顯示相關細節視窗' do
   end
 end
 
