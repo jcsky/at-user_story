@@ -34,7 +34,7 @@ feature '<申請成為教師>' do
     end
     scenario '可任意輸入自製標籤' do
     end
-    scenario '可直接選取下方教學標籤' do
+    scenario '可直接選取現有教學標籤' do
     end
     scenario '按[儲存並退出]會儲存目前的資訊並跳轉到<教師牆>' do
     end
