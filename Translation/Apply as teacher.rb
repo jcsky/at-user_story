@@ -9,15 +9,23 @@ sidebar_eight:'介紹影片'
 sidebar_nine:'授課時間'
 sidebar_ten:'授課價位'
 sidebar_eleven:'提交申請'
+# 取名字，因為順序可能改變
+# 使用 sidebar:
+#       name_1: '基本資料'
+#       name_2: '基本資料'
 
-title: '申請成為教師'
-caption: '在申請成為教師之前，請準備好以下資料'
-section1_title:'教學證書文件'
-section1_desc:'我們需要您提供相關教學證書的電子版本，供我們做內部審核，此資料並不會對外公開'
-section2_title:'自我介紹影片'
-section2_desc:'透過影片讓學生了解您的個性及教學風格，片長大約2~3分鐘並上傳至Youtube'
-next_btn: '下一步'
+index:
+  title: '申請成為教師'
+  caption: '在申請成為教師之前，請準備好以下資料'
+  section1_title:'教學證書文件'
+  section1_desc:'我們需要您提供相關教學證書的電子版本，供我們做內部審核，此資料並不會對外公開'
+  section2_title:'自我介紹影片'
+  section2_desc:'透過影片讓學生了解您的個性及教學風格，片長大約2~3分鐘並上傳至Youtube'
+  next_btn: '下一步'
+# 不需分行
 
+# 此為 key-value 型式
+# 同一階層的key只能有一個
 basic_info: '基本資料'
 basic_info:
   caption: '以下皆為必填項目'
@@ -74,6 +82,7 @@ education_background:
   start_date: '開始日期'
   to: '至'
   finish_date: '結束日期'
+  persent: '至今'
   school_name: '學校名稱'
   major_name: '科系名稱'
   file_upload: '上傳證書'
@@ -110,17 +119,18 @@ intro_video:
 
 schedule_setting: '課表設定'
 schedule_setting:
-  preparation_time: '需備課時間'
+  # key 不能設定值
+  preparation_time:
+    title: '需備課時間'
     caption: '您可以設定最佳可被預約的時間，如果時間較短您較有機會被心的學生及時預約，如果時間較長可以有充分的時間備課。'
-    one_hour_blank: '1小時'
-    six_hour_blank: '6小時'
-    twelve_hour_blank: '12小時'
-    twenty_four_hour_blank: '24小時'
-  confirm_reservation: '是否需要確認上課預約'
+    hour: '小時'
+  confirm_reservation:
+    title: '是否需要確認上課預約'
     caption: '學生預約你的課時需等待你的確認，該堂課才算成立，若選擇否，當學生預約您的課時該堂課即會立刻生效，可減少學生等待回覆的時間。'
     need_blank:'需要'
     no_need_blank: '不需要'
-  regular_time: '每週固定授課時間'
+  regular_time:
+    title: '每週固定授課時間'
     caption: '老師可隨時彈性化調整授課時間'
 #    week_schedule
   next_btn: '下一步'
@@ -155,6 +165,11 @@ payment_setting:
     caption: '4.4% + 固定費用（視交易幣別而有所不同）'
   way_two: '銀行匯款'
     caption: '適合台灣，玉山銀行免手續費，其他銀行需付15元手續費'
+  # way_one / way_two 不利識別、key 不能有 value
+  # example:
+  # paypal:
+  #   title: 'Paypal'
+  #   caption: '4.4% + 固定費用（視交易幣別而有所不同）'
   next_btn: '下一步'
   save_btn:'儲存並退出'
 
@@ -165,8 +180,12 @@ announcement:
   line_two: '匯款時間為每月15號，我們會用Paypal或是銀行轉帳的方式匯款至教師帳戶'
   line_three: '教師排序是依照教師停留在平台上的時數多寡來排序，只要多上線就可以增加自己的曝光率'
   line_four: '若老師無故遲到、早退，或經檢舉上課有不良記錄即會將老師下架並終止與老師的合約'
+  # use line_1, line_2 or line1, line2 便於對齊
   apply_btn: '提交申請'
 
+# 這也是一個 page，應該有個 page name 及縮排
+# page_name:
+#   success: '送出成功'
 success: '送出成功'
 section_one: '我們已收到您的教師申請表單，我們通常會在一到兩週內審核完您的資料，請在該段時間內留意我們的電子郵件。'
 section_two: '在此期間，您可以繼續編輯您的教師申請表單，若有任何問題也可私訊FB粉絲專頁 Facebook Message'
