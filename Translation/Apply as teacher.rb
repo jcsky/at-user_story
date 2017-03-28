@@ -1,18 +1,15 @@
-sidebar_one:'基本資料'
-sidebar_two:'教學語言'
-sidebar_three:'教學標籤'
-sidebar_four:'教師介紹'
-sidebar_five:'教學證照'
-sidebar_six:'學歷背景'
-sidebar_seven:'工作經驗'
-sidebar_eight:'介紹影片'
-sidebar_nine:'授課時間'
-sidebar_ten:'授課價位'
-sidebar_eleven:'提交申請'
-# 取名字，因為順序可能改變
-# 使用 sidebar:
-#       name_1: '基本資料'
-#       name_2: '基本資料'
+sidebar:
+  basic_info:'基本資料'
+  teach_language:'教學語言'
+  teach_tag:'教學標籤'
+  teacher_intro:'教師介紹'
+  teacher_certificate:'教學證照'
+  education_background:'學歷背景'
+  work_experience:'工作經驗'
+  intro_video:'介紹影片'
+  schedule_setting:'授課時間'
+  class_price:'授課價位'
+  apply:'提交申請'
 
 index:
   title: '申請成為教師'
@@ -26,8 +23,9 @@ index:
 
 # 此為 key-value 型式
 # 同一階層的key只能有一個
-basic_info: '基本資料'
+
 basic_info:
+  title: '基本資料'
   caption: '以下皆為必填項目'
   photo: '照片'
   image: '照片圖檔'
@@ -39,16 +37,16 @@ basic_info:
   next_btn: '下一步'
   save_btn:'儲存並退出'
 
-teach_language: '教學語言'
 teach_language:
+  title: '教學語言'
   can_teach: '教授語言'
   can_speak: '會說語言'
   caption: '*能用來與學生溝通，但不足以教授'
   next_btn: '下一步'
   save_btn:'儲存並退出'
 
-teach_tag: '教學標籤'
 teach_tag:
+  title: '教學標籤'
   caption:'請選擇你可以授課的主題'
   tip: '教師有提供教材將可以吸引更多學生'
   material: '提供教材'
@@ -56,8 +54,8 @@ teach_tag:
   next_btn: '下一步'
   save_btn:'儲存並退出'
 
-teacher_intro: '教師介紹'
 teacher_intro:
+  title: '教師介紹'
   short_intro: '簡短介紹'
   caption: '*此介紹會顯示在搜尋教師頁，請簡短敘述你的教學特色'
   tip: '最多250個字'
@@ -66,8 +64,8 @@ teacher_intro:
   next_btn: '下一步'
   save_btn:'儲存並退出'
 
-teach_certificate: '教學證照'
 teach_certificate:
+  title: '教學證照'
   caption: '若無教學證照必須有相關教學經驗才可申請'
   certificate_name: '證照名稱'
   certificate_upload: '上傳證照'
@@ -76,8 +74,8 @@ teach_certificate:
   next_btn: '下一步'
   save_btn:'儲存並退出'
 
-education_background: '學歷背景'
 education_background:
+  title: '學歷背景'
   period: '時期'
   start_date: '開始日期'
   to: '至'
@@ -91,8 +89,8 @@ education_background:
   next_btn: '下一步'
   save_btn:'儲存並退出'
 
-work_experience: '工作經驗'
 work_experience:
+  title: '工作經驗'
   caption: '若無教學經驗必須有相關教學證照才可申請'
   date: '日期'
   start_date: '開始日期'
@@ -104,8 +102,8 @@ work_experience:
   next_btn: '下一步'
   save_btn:'儲存並退出'
 
-intro_video: '介紹影片'
 intro_video:
+  title: '介紹影片'
   caption: '影片必須上傳至Youtube'
   example_video: '範例影片'
   video_rule: '影片規範'
@@ -117,8 +115,8 @@ intro_video:
   next_btn: '下一步'
   save_btn:'儲存並退出'
 
-schedule_setting: '課表設定'
 schedule_setting:
+  title: '課表設定'
   # key 不能設定值
   preparation_time:
     title: '需備課時間'
@@ -153,40 +151,34 @@ class_price:
     price: 'USD$/堂'
   ten_class: '10堂課'
   price_blank:
-    price: 'USD$ 每堂 X 10 = USD$'
+    price: 'USD$/堂'
   new_class_package: '+新增課程包'
   next_btn: '下一步'
   save_btn:'儲存並退出'
 
-payment_setting: '收帳設定'
-payment_setting:
+income_setting:
+  title: '收帳設定'
   caption: '兩種收帳方式擇一填寫'
-  way_one: 'Paypal'
+  paypal:
+    title: 'Paypal'
     caption: '4.4% + 固定費用（視交易幣別而有所不同）'
-  way_two: '銀行匯款'
+  bank:
+    title: '銀行匯款'
     caption: '適合台灣，玉山銀行免手續費，其他銀行需付15元手續費'
-  # way_one / way_two 不利識別、key 不能有 value
-  # example:
-  # paypal:
-  #   title: 'Paypal'
-  #   caption: '4.4% + 固定費用（視交易幣別而有所不同）'
   next_btn: '下一步'
   save_btn:'儲存並退出'
 
-announcement: '確認申請成為教師注意事項'
 announcement:
+  title: '確認申請成為教師注意事項'
   caption: '請務必閱讀以下注意事項'
-  line_one: '上課以視訊方式進行，教師須在上課時間透過平台進入Zoom視訊上課即可'
-  line_two: '匯款時間為每月15號，我們會用Paypal或是銀行轉帳的方式匯款至教師帳戶'
-  line_three: '教師排序是依照教師停留在平台上的時數多寡來排序，只要多上線就可以增加自己的曝光率'
-  line_four: '若老師無故遲到、早退，或經檢舉上課有不良記錄即會將老師下架並終止與老師的合約'
-  # use line_1, line_2 or line1, line2 便於對齊
+  line_1: '上課以視訊方式進行，教師須在上課時間透過平台進入Zoom視訊上課即可'
+  line_2: '匯款時間為每月15號，我們會用Paypal或是銀行轉帳的方式匯款至教師帳戶'
+  line_3: '教師排序是依照教師停留在平台上的時數多寡來排序，只要多上線就可以增加自己的曝光率'
+  line_4: '若老師無故遲到、早退，或經檢舉上課有不良記錄即會將老師下架並終止與老師的合約'
   apply_btn: '提交申請'
 
-# 這也是一個 page，應該有個 page name 及縮排
-# page_name:
-#   success: '送出成功'
-success: '送出成功'
-section_one: '我們已收到您的教師申請表單，我們通常會在一到兩週內審核完您的資料，請在該段時間內留意我們的電子郵件。'
-section_two: '在此期間，您可以繼續編輯您的教師申請表單，若有任何問題也可私訊FB粉絲專頁 Facebook Message'
-finish_btn: '完成'
+success:
+  title: '送出成功'
+  section_1: '我們已收到您的教師申請表單，我們通常會在一到兩週內審核完您的資料，請在該段時間內留意我們的電子郵件。'
+  section_2: '在此期間，您可以繼續編輯您的教師申請表單，若有任何問題也可私訊FB粉絲專頁 Facebook Message'
+  finish_btn: '完成'
