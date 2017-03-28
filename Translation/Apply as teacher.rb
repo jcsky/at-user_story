@@ -60,7 +60,7 @@ teacher_intro: '教師介紹'
 teacher_intro:
   short_intro: '簡短介紹'
   caption: '*此介紹會顯示在搜尋教師頁，請簡短敘述你的教學特色'
-  tip: '需輸入250字'
+  tip: '最多250個字'
   long_intro: '詳細介紹'
   caption: '*此介紹會顯示在教師個人頁面，你可以描述你的個人特質及教學經驗'
   next_btn: '下一步'
