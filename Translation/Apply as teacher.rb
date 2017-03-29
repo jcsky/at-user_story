@@ -10,7 +10,6 @@ sidebar:
   schedule_setting:'授課時間'
   class_price:'授課價位'
   apply:'提交申請'
-
 index:
   title: '申請成為教師'
   caption: '在申請成為教師之前，請準備好以下資料'
@@ -19,11 +18,6 @@ index:
   section2_title:'自我介紹影片'
   section2_desc:'透過影片讓學生了解您的個性及教學風格，片長大約2~3分鐘並上傳至Youtube'
   next_btn: '下一步'
-# 不需分行
-
-# 此為 key-value 型式
-# 同一階層的key只能有一個
-
 basic_info:
   title: '基本資料'
   caption: '以下皆為必填項目'
@@ -36,7 +30,6 @@ basic_info:
   currency: '幣別'
   next_btn: '下一步'
   save_btn:'儲存並退出'
-
 teach_language:
   title: '教學語言'
   can_teach: '教授語言'
@@ -44,7 +37,6 @@ teach_language:
   caption: '*能用來與學生溝通，但不足以教授'
   next_btn: '下一步'
   save_btn:'儲存並退出'
-
 teach_tag:
   title: '教學標籤'
   caption:'請選擇你可以授課的主題'
@@ -53,7 +45,6 @@ teach_tag:
   tag: '教學標籤以空白分隔'
   next_btn: '下一步'
   save_btn:'儲存並退出'
-
 teacher_intro:
   title: '教師介紹'
   short_intro: '簡短介紹'
@@ -63,7 +54,6 @@ teacher_intro:
   caption: '*此介紹會顯示在教師個人頁面，你可以描述你的個人特質及教學經驗'
   next_btn: '下一步'
   save_btn:'儲存並退出'
-
 teach_certificate:
   title: '教學證照'
   caption: '若無教學證照必須有相關教學經驗才可申請'
@@ -73,7 +63,6 @@ teach_certificate:
   new_certificate: '+新增教學證照'
   next_btn: '下一步'
   save_btn:'儲存並退出'
-
 education_background:
   title: '學歷背景'
   period: '時期'
@@ -88,7 +77,6 @@ education_background:
   new_background: '+新增學歷背景'
   next_btn: '下一步'
   save_btn:'儲存並退出'
-
 work_experience:
   title: '工作經驗'
   caption: '若無教學經驗必須有相關教學證照才可申請'
@@ -101,7 +89,6 @@ work_experience:
   new_work: '+新增工作經驗'
   next_btn: '下一步'
   save_btn:'儲存並退出'
-
 intro_video:
   title: '介紹影片'
   caption: '影片必須上傳至Youtube'
@@ -114,10 +101,8 @@ intro_video:
   why_fail: '為什麼上傳影片會失敗？'
   next_btn: '下一步'
   save_btn:'儲存並退出'
-
 schedule_setting:
   title: '課表設定'
-  # key 不能設定值
   preparation_time:
     title: '需備課時間'
     caption: '您可以設定最佳可被預約的時間，如果時間較短您較有機會被心的學生及時預約，如果時間較長可以有充分的時間備課。'
@@ -130,44 +115,31 @@ schedule_setting:
   regular_time:
     title: '每週固定授課時間'
     caption: '老師可隨時彈性化調整授課時間'
-#    week_schedule
   next_btn: '下一步'
   save_btn:'儲存並退出'
-
-class_price: '授課價位'
 class_price:
+  title: '授課價位'
   caption: '教師可隨時更動價位，每筆交易平台會從中收取15%的手續費'
   thrity_mins_class: '30分鐘體驗課'
   trial_class: '體驗課'
-  price_blank:
-    price: 'USD$/堂'
   notice: '（每一位學生只有一次機會可以上您的體驗課，降低體驗課程費用可以收取更多學生）'
   sixty_mins_class: '60分鐘正式課'
-  one_class: '1堂課'
-  price_blank:
-    price: 'USD$/堂'
-  five_class: '5堂課'
-  price_blank:
-    price: 'USD$/堂'
-  ten_class: '10堂課'
-  price_blank:
-    price: 'USD$/堂'
+  singularize_unit: '堂'
+  pluralize_unit: '堂'
   new_class_package: '+新增課程包'
   next_btn: '下一步'
   save_btn:'儲存並退出'
-
 income_setting:
   title: '收帳設定'
   caption: '兩種收帳方式擇一填寫'
   paypal:
     title: 'Paypal'
     caption: '4.4% + 固定費用（視交易幣別而有所不同）'
-  bank:
+  taiwan_bank:
     title: '銀行匯款'
     caption: '適合台灣，玉山銀行免手續費，其他銀行需付15元手續費'
   next_btn: '下一步'
   save_btn:'儲存並退出'
-
 announcement:
   title: '確認申請成為教師注意事項'
   caption: '請務必閱讀以下注意事項'
@@ -176,7 +148,6 @@ announcement:
   line_3: '教師排序是依照教師停留在平台上的時數多寡來排序，只要多上線就可以增加自己的曝光率'
   line_4: '若老師無故遲到、早退，或經檢舉上課有不良記錄即會將老師下架並終止與老師的合約'
   apply_btn: '提交申請'
-
 success:
   title: '送出成功'
   section_1: '我們已收到您的教師申請表單，我們通常會在一到兩週內審核完您的資料，請在該段時間內留意我們的電子郵件。'
