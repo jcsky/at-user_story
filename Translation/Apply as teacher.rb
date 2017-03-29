@@ -122,7 +122,7 @@ class_price:
   caption: '教師可隨時更動價位，每筆交易平台會從中收取15%的手續費'
   thrity_mins_class: '30分鐘體驗課'
   trial_class: '體驗課'
-  notice: '（每一位學生只有一次機會可以上您的體驗課，降低體驗課程費用可以收取更多學生）'
+  trial_notice: '（每一位學生只有一次機會可以上您的體驗課，降低體驗課程費用可以收取更多學生）'
   sixty_mins_class: '60分鐘正式課'
   singularize_unit: '堂'
   pluralize_unit: '堂'
