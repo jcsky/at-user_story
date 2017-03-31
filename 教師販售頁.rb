@@ -1,22 +1,28 @@
 feature '<教師販售頁>' do
   scenario '顯示教師自介影片' do
+  end
   feature '購買課程' do
     feature '體驗課' do
-      scenario '未上過任何體驗課的user點按[立即預約]會顯示<order>,並可選取首次免費體驗券' do
+      scenario '未上過任何體驗課的user點按[立即預約]會顯示<購物車>,並可選取首次免費體驗券' do
       end
-      scenario '上過其他教師體驗課的user點按[立即預約]會顯示<order>' do
+      scenario '上過其他教師體驗課的user點按[立即預約]會顯示<購物車>' do
       end
       scenario 'guest點按[立即預約]會顯示會顯示註冊視窗' do
       end
       scenario 'user僅能上每位教師的體驗課一次' do
       end
+      scenario '任何人完全還沒上過課時可免費上一次體驗課(任意老師)' do
+      end
     end
     feature '正式課' do
-      scenario 'user點按[立即購買]會顯示<Order>' do
+      scenario 'user點按[立即購買]會顯示<購物車>' do
       end
       scenario 'guest點按[立即購買]會顯示註冊視窗' do
       end
     end
+    scenario '學生購買成功後教師會收到購課通知' do
+    end
+  end
 
   feature 'sidebar' do
     scenario '顯示教師頭像/教授語言/國籍/教過課堂數/教學標籤' do
