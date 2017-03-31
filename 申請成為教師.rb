@@ -34,8 +34,6 @@ feature '<申請成為教師>' do
     end
     scenario '可任意輸入自製標籤或現有的標籤(必填)' do
     end
-    scenario '' do
-    end
     scenario '按[儲存並退出]會儲存目前的資訊並跳轉到<教師牆>' do
     end
     scenario '才能按[下一步]' do
