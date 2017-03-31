@@ -279,7 +279,9 @@ feature '<學生 Dashboard>頁面'
       end
     end
   end
+end
 
+# FIXME move to another file
 feature '費用' do
   feature 'AT手續費用' do
     scenario 'AT教師手續費用為15%' do
