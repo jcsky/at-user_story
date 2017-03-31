@@ -2,7 +2,7 @@ en:
   student_dashboard:
     navigation_bar:
       my_schedule: '我的課表'
-      reserve_class:'預約課程'
+      reserve_class: '預約課程'
       my_teacher: '我的教師'
       at_coins: 'AT幣'
       coupon: '活動優惠券'
@@ -88,8 +88,10 @@ en:
         completed: '已完成'
         booked: '已預約'
         not_yet_booked: '尚未預約該課時'
-    settings: '帳號設定'
-      personal_setting: '個人設置'
+    settings:
+      account_settings: '帳號設定'
+      personal_setting:
+        personal_setting: '個人設置'
         first_name: '名字'
         last_name: '姓氏'
         last_name_desc: '您的個人資料僅會顯示您的名字'
@@ -105,9 +107,9 @@ en:
         phone_number: '電話號碼'
         resend_verification_code: '發送驗證碼'
         verification_success: '驗證成功'
-        update_btn: '更新設定'
-      change_password: '更改密碼'
+        update_setting_btn: '更新設定'
+        change_password: '更改密碼'
         current_password: '目前密碼'
         new_password: '新密碼'
         confirm_new_password: '確認密碼'
-        update_btn: '更新密碼'
+        update_password_btn: '更新密碼'

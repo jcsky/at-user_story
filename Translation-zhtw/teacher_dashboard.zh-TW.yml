@@ -43,7 +43,7 @@ en:
         class_time: '上課時間'
         class_date: '上課日期'
         state_blank:
-          title:'狀態'
+          title: '狀態'
           ask_bookable: '您的學生提出了一個預約課時請求，請接受或是拒絕該請求，如果您在星期六2月11,2017 15:51(UTC+08:00) 之前沒有回應，該課時請求將會自動過期。'
           # FIXME
           send_message: '傳送訊息'
@@ -105,7 +105,7 @@ en:
       confirm_reservation:
         title: '是否需要確認上課預約'
         caption: '學生預約你的課時需等待你的確認，該堂課才算成立，若選擇否，當學生預約您的課時該堂課即會立刻生效，可減少學生等待回覆的時間。'
-        need:'需要'
+        need: '需要'
         no_need: '不需要'
       regular_time: '每週固定課表'
       schedule: '行事曆'
