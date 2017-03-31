@@ -13,26 +13,67 @@ feature '<教師 Dashboard>' do
     end
     scenario '不同狀態包括已完成、當天或未確認課、已預約的課程' do
     end
-    scenario '點選行事曆中的課程，會進到該課程詳細頁面 <教師 Dashboard - 我的學生>' do
+    scenario '點選行事曆中的課程，會進到該課程頁面<我的學生-課程詳情>' do
     end
   end
 
   feature '<我的學生>' do
-    feature '學生預約課程' do
-      scenario '系統會顯示提醒視窗' do
+
+    # FIXME
+    # feature '學生預約課程' do
+    #   scenario '系統會顯示提醒視窗' do
+    #   end
+    #   feature '是否需要確認上課預約(系統預設:不需要)' do
+    #     scenario '需要:教師需在備課時間的一半內確認，否則此課將自動取消' do
+    #     end
+    #     scenario '如設定24小時以前可被預約,則12小時內要點按[接受]或[拒絕]' do
+    #     end
+    #     scenario '如設定12小時以前可被預約,則6小時內要點按[接受]或[拒絕]' do
+    #     end
+    #     scenario '點按[拒絕]後可點按[傳送訊息]與學生聯繫' do
+    #     end
+    #     scenario '不需要:學生預約即成功' do
+    #     end
+    #     scenario '若學生預約課程成功將會寄發電子郵件通知' do
+    #     end
+    #   end
+    # end
+
+    feature '<課程包詳情頁>' do
+      # TODO
+    end
+
+    feature '<課程詳情>' do
+      feature '取消課程' do
+        scenario '點選學生的課程後就會出現[即將上課]及[取消課堂]按鈕' do
+        end
+        scenario '點按[取消預約]會顯示視窗可告知學生原因' do
+        end
+        scenario '取消課程後可點按[傳送訊息]提醒學生重新預約' do
+        end
+        scenario '一個月僅有兩次可以取消課程，之後上課會扣當課堂費50%' do
+        end
+        scenario '開課前一小時會寄手機簡訊通知教師' do
+        end
+        scenario '上課10分鐘前[即將上課]將會變成[進入教室]且[取消課程]會消失' do
+        end
       end
-      feature '是否需要確認上課預約(系統預設:不需要)' do
-        scenario '需要:教師需在備課時間的一半內確認，否則此課將自動取消' do
+      feature '完成課程' do
+        feature '評價' do
+          scenario '需按[確認課堂完成]且給予學生評價來完成課程' do
+          end
+          scenario '收到學生評價會顯示通知視窗並可由系統翻譯成教師頁面語言' do
+          end
+          scenario '收到學生評價時會有電子郵件通知' do
+          end
+          scenario '在<我的學生 - 課程詳情 - 評價>可以看到教師及學生給彼此的評價' do
+          end
         end
-        scenario '如設定24小時以前可被預約,則12小時內要點按[接受]或[拒絕]' do
-        end
-        scenario '如設定12小時以前可被預約,則6小時內要點按[接受]或[拒絕]' do
-        end
-        scenario '點按[拒絕]後可點按[傳送訊息]與學生聯繫' do
-        end
-        scenario '不需要:學生預約即成功' do
-        end
-        scenario '若學生預約課程成功將會寄發電子郵件通知' do
+        feature '回報問題' do
+          scenario '可按[回報課程問題]來告知AT' do
+          end
+          scenario '若學生方有問題,會顯示問題內容/[學生重新預約]/[聯繫客服]' do
+          end
         end
       end
     end
@@ -50,41 +91,9 @@ feature '<教師 Dashboard>' do
       end
       scenario '可點按[傳送訊息]與學生聯繫' do
       end
-      scenario'點擊課程包列出課程狀態(已完成/已預約/未預約)'do
+      scenario '點擊課程包會進到<我的學生-課程包詳情頁>' do
       end
-      feature '點擊任一堂課進入<我的學生 - 課程詳情>' do
-        feature '取消課程' do
-          scenario '點選學生的課程後就會出現[即將上課]及[取消課堂]按鈕' do
-          end
-          scenario '點按[取消預約]會顯示視窗可告知學生原因' do
-          end
-          scenario '取消課程後可點按[傳送訊息]提醒學生重新預約' do
-          end
-          scenario '一個月僅有兩次可以取消課程，之後上課會扣當課堂費50%' do
-          end
-          scenario '開課前一小時會寄手機簡訊通知教師' do
-          end
-          scenario '上課10分鐘前[即將上課]將會變成[進入教室]且[取消課程]會消失' do
-          end
-        end
-        feature '完成課程' do
-          feature '評價' do
-            scenario '需按[確認課堂完成]且給予學生評價來完成課程' do
-            end
-            scenario '收到學生評價會顯示通知視窗並可由系統翻譯成教師頁面語言' do
-            end
-            scenario '收到學生評價時會有電子郵件通知' do
-            end
-            scenario '在<我的學生 - 課程詳情 - 評價>可以看到教師及學生給彼此的評價' do
-            end
-          end
-          feature '回報問題' do
-            scenario '可按[回報課程問題]來告知AT' do
-            end
-            scenario '若學生方有問題,會顯示問題內容/[學生重新預約]/[聯繫客服]' do
-            end
-          end
-        end
+      feature '點擊任一堂課進入<我的學生-課程詳情>' do
       end
     end
   end
