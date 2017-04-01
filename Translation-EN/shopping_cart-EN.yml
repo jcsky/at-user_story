@@ -1,0 +1,25 @@
+en:
+  shopping_cart:
+    shopping_cart:
+      title: 'Home/Shopping Cart'
+      subtitle: 'Shopping Cart'
+      package_blank:
+        can_teach: 'Teaches'
+        come_from: 'From'
+        can_speak: 'Speak'
+        learn: 'Learning'
+        class_number: 'Sessions'
+        type: 'Topic'
+      price_blank:
+        service_charge: 'Service fee'
+        discount: 'Discount'
+        total: 'Order Total'
+        notice: 'The actual price you pay in (NTD) is dependent on the current exchange rate.'
+        choose_coupon: 'Discount options'
+    checkout:
+      subtitle: 'Proceed to checkout'
+      pay_with_credit_card: 'Visa, Mastercard, JCB: Pay with credit card'
+      pay_with_convenience_store: 'Taiwanese bank accounts only: Pay at CVS'
+      pay_with_ATM: 'Taiwanese bank accounts only: ATM payment'
+      rule: 'I agree, with the《terms and conditions. Refunds can only be paid in the form of AmazingTalker credits, and will not be paid to the bank account of which the payment was initially received. I also agree, with the total amount stated to be paid (including service fee).'
+      agree_and_pay_btn: 'Go to Pay'
