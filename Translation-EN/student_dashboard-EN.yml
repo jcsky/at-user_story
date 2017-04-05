@@ -28,7 +28,7 @@ en:
         title: 'Status'
         booked_notice: 'The session will start in 2 days. If you would like to cancel, please do so within 12 hours prior to your lesson.申請'
         message_btn: 'Message'
-        cancel_ok: '取消成功'
+        cancel_ok: 'Successfully Cancel'
         rebook_btn: '重新預約'
         cancel_notice: '課程已取消預約，請重新預約該堂課時'
         upcoming_class_btn: 'Upcoming Lesson'
@@ -52,8 +52,8 @@ en:
       confirm_popup:
         title: 'Session Request'
         duration: 'Session Duration'
-        hour: '小時'
-        minute: '分鐘'
+        hour: 'hour'
+        minute: 'minutes'
         cancel_btn: 'Cancel'
         comfirm_btn: 'OK'
     my_teacher:
