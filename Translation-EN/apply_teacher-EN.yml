@@ -138,14 +138,14 @@ en:
       next_btn: 'Next'
       save_btn: 'Save & Exit'
     income_setting:
-      title: '收帳設定'
-      caption: '兩種收帳方式擇一填寫'
+      title: 'Withdrawl Settings'
+      caption: 'Choose your primary withdrawal method.'
       paypal:
         title: 'Paypal'
-        caption: '4.4% + 固定費用（視交易幣別而有所不同）'
+        caption: '4.4% + fixed fee : Based on the currency received'
       taiwan_bank:
-        title: '銀行匯款'
-        caption: '適合台灣，玉山銀行免手續費，其他銀行需付15元手續費'
+        title: 'Taiwanese bank account'
+        caption: 'We will charge a 15 NTD fee charged if it is not transferred through E.SUN bank.'
       next_btn: 'Next'
       save_btn: 'Save & Exit'
     announcement:
