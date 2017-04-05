@@ -29,8 +29,8 @@ en:
         booked_notice: 'The session will start in 2 days. If you would like to cancel, please do so within 12 hours prior to your lesson.申請'
         message_btn: 'Message'
         cancel_ok: 'Successfully Cancel'
-        rebook_btn: '重新預約'
-        cancel_notice: '課程已取消預約，請重新預約該堂課時'
+        rebook_btn: 'Reschedule'
+        cancel_notice: 'Session cancel sucessfully. Please reschedule at another time.'
         upcoming_class_btn: 'Upcoming Lesson'
         cancel_class_btn: 'Cancel Lesson'
       rating_blank:
