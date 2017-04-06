@@ -33,17 +33,42 @@ feature '<購物車>' do
   end
 
   feature '特殊流程' do
-    scenario '' do
-      # user cart: ABC
-      # not login user cart: DEF
-      # login
-      # user cart: DEF, ABC, ABCDEF?
+    #待新增不同帳號
+    feature'使用者同時開啟兩個不同身份狀態（user/guest）要進行結帳。'do
+      feature'使用者一開始以guest加入課程包ABC，之後開啟另一個頁籤<登入>（購物車有課程包ABC），再以user加入課程包DEF'do
+        scenario'使用者以user的頁面進行結帳時，購物車有課程包ABCDEF'do
+        end
+        scenario'使用者以guest的頁面進行結帳時，系統會自行轉至user身份，購物車有課程包ABCDEF'do
+        end
+      end
+      feature'使用者一開始以user加入課程包ABC，之後開啟另一個頁籤登出（購物車沒有內容），再以guest加入課程包DEF'do
+        scenario'使用者以guest的頁面進行結帳時，系統要求<登入>，購物車有課程包DEF'do
+        end
+        scenario'使用者以user的頁面進行結帳時，系統再次要求<登入>，購物車有課程包DEF'do
+        end
+      end
     end
-    scenario '使用者加了一個課程包，然後教師把課程包刪除了，..' do
+
+    #錯誤訊息鈺閔正在做
+    feature '使用者(user/guest)選了一個課程包，但是在結帳成功前，教師將該課程包刪除，' do
+      scenario 'guest按下[確認並支付]，系統要求<登入>，登入成功後，跳出錯誤訊息。按下［確認］後，跳回購物車頁面（該課程就不存在）'do
+      end
+      scenario'user按下[確認並支付]，跳出錯誤訊息。按下［確認］後，跳回購物車頁面（該課程就不存在）'
+      end
     end
-    scenario '使用者選了一個優惠券，然後系統發現優惠券已經不存在或無法使用，..' do
+
+    feature '使用者(user/guest)選了一個優惠券，按下[確認並支付]後，系統發現優惠券已經不存在或無法使用，..' do
+      scenario 'guest按下[確認並支付]，系統要求<登入>，登入成功後，跳出錯誤訊息。按下［確認］後，跳回購物車頁面（該優惠卷就不存在）'do
+      end
+      scenario'user按下[確認並支付]，跳出錯誤訊息。按下［確認］後，跳回購物車頁面（該優惠卷就不存在）'
+      end
     end
-    scenario '使用者選了一個課程包，然後系統發現教師已經不教該語言..' do
+
+    feature '使用者(user/guest)選了一個課程包，按下[確認並支付]後，系統發現教師已經不教該語言..' do
+      scenario 'guest按下[確認並支付]，系統要求<登入>，登入成功後，跳出錯誤訊息。按下［確認］後，跳回購物車頁面（該教師的語言就不存在）'do
+      end
+      scenario'user按下[確認並支付]，跳出錯誤訊息。按下［確認］後，跳回購物車頁面（該教師的語言就不存在）'
+      end
     end
   end
 end
