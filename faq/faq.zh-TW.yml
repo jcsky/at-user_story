@@ -6,10 +6,10 @@ zh-TW:
       about_pay: '付費方式與課程費用'
       about_session: '課程相關'
     hot:
-    - question: AmazingTalker有提供操作手冊嗎？
-      answer_html:
-        目前我們將操作手冊放置我們的部落格。
-        <br><a href="https://goo.gl/bGo0wr">點擊這裡查看完整的操作手冊</a>。
+      - question: AmazingTalker有提供操作手冊嗎？
+        answer_html:
+          目前我們將操作手冊放置我們的部落格。
+          <br><a href="https://goo.gl/bGo0wr">點擊這裡查看完整的操作手冊</a>。
       - question: 收不到驗證碼該怎麼辦？
         answer_html:
           請聯絡客服協助處理。
